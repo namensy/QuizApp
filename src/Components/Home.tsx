@@ -7,7 +7,7 @@ interface StartScreenProps {
 
 const Home = ({ onStart }: StartScreenProps) => {
   return (
-    <div className="flex flex-col justify-center items-center w-[50%] rounded-xl shadow-xl mx-auto mt-10 py-8 space-y-6">
+    <div className="flex flex-col justify-center items-center rounded-xl shadow-xl mx-auto mt-10 py-8 space-y-6">
       <h1 className="text-4xl font-bold">Coding Quiz Game</h1>
       <p>Test your programming knowledge!</p>
       <div

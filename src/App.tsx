@@ -12,11 +12,17 @@ function App() {
     setGameState("playing");
   }
 
+  function handleAnswer(index: number): void {
+    console.log(index);
+  }
+
   return (
     <div className="min-h-screen bg-gray-50 font-semibold py-12 px-5 sm:px-6 lg:px-8">
-      <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+      <div className="max-w-2xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
         {gameState === "start" && <Home onStart={handleStart} />}
-        {gameState === "playing" && <QuestionCard question={QUESTIONS[0]} />}
+        {gameState === "playing" && (
+          <QuestionCard question={QUESTIONS[0]} onAnswerSelect={handleAnswer} />
+        )}
         {gameState === "end" && <GameOver />}
       </div>
     </div>
