@@ -7,7 +7,6 @@ interface QuestionScreenProps {
   selectedAnswer: number | null;
   totalQuestions: number;
   currentQuestion: number;
-
 }
 
 const QuestionCard = ({
